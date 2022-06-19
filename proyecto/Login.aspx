@@ -51,7 +51,6 @@
           </div>
             
             <asp:Label ID="Label1" runat="server" Text="Usuario incorrecto" Visible="False"></asp:Label>
-             <asp:DropDownList ID="DropDownList1" runat="server" Visible="False"></asp:DropDownList>
         </div>
       </form>
     <!--<br>

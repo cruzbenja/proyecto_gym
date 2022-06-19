@@ -140,14 +140,7 @@
                                 </li>
                             </ul>
                         </li>
-                              <li class="nav-item">
-                            <a href="reporte.aspx" class="nav-link">
-                                <i class="nav-icon fas fa-chart-bar"></i>
-                                <p>
-                                    Reporte                             
-                                </p>
-                            </a>
-                        </li>
+                              
                        </asp:Panel>  
 
                         <asp:Panel ID="PanelReportes" runat="server">
@@ -169,10 +162,7 @@
     </div>
    <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-      
-
-     
-
+       
 
       <!-- Control Sidebar -->
       <aside class="control-sidebar control-sidebar-dark">
@@ -181,13 +171,13 @@
       <!-- /.control-sidebar -->
       </div>
 
-           <?php $año = date('Y'); ?>
+           <%--<?php $año = date('Y'); ?>
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
             <b>Version</b> 1.0
             </div>
             <strong>Copyright &copy; Software Bolivia <?php echo $año ?></strong> Todos los derechos reservados.
-        </footer>
+        </footer>--%>
     
     </div>
     <!-- ./wrapper -->

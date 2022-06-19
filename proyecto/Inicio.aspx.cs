@@ -23,15 +23,23 @@ namespace proyecto
 
                 if(idRol == "1"){
                     PanelEmpleados.Visible = true;
-                    PanelReportes.Visible = false;
+                    PanelInscripcion.Visible = true;
+                    PanelReportes.Visible = true;
+                    PanelMensualidad.Visible = true;
+                    PanelClientes.Visible = true;
+                    PanelDashboard.Visible= false;
                 }
                 else
                 {
                     if (idRol == "2")
                     {
                         PanelEmpleados.Visible = false;
-                        PanelClientes.Visible = false;
-                        
+                        PanelInscripcion.Visible = true;
+                        PanelReportes.Visible = false;
+                        PanelMensualidad.Visible = true;
+                        PanelClientes.Visible = true;
+                        PanelDashboard.Visible = false;
+
                     }
                    
                 }
