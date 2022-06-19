@@ -1,0 +1,70 @@
+﻿   <!-- Modal nuevo/editar equipo -->
+<div class="modal fade" id="ModalRegistrarCliente">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"> Nueva Usuario</h4>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="inputName" class="form-label"><b>Nombre Empleado</b></label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                            </div>
+                            <asp:DropDownList ID="DropDownList2" class="form-control shadow-lg" runat="server">
+
+                            </asp:DropDownList>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <label for="inputName" class="form-label"><b>Usuario</b></label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <asp:TextBox type="text" class="form-control shadow-lg" ID="user" placeholder="Ingresar usuario" runat="server"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <label for="inputName" class="form-label"><b>Contraseña</b></label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <asp:TextBox type="text" class="form-control shadow-lg" ID="contra" placeholder="Ingresar contraseña" runat="server" TextMode="Password"></asp:TextBox>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label"><b>Roles</b></label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user-cog"></i></span>
+                            </div>
+                            <asp:DropDownList ID="DropDownList3" class="form-control shadow-lg" runat="server">
+
+                            </asp:DropDownList>
+                        </div>
+                    </div>
+                    <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
+                    <asp:DropDownList ID="DropDownList4" runat="server" Visible="False"></asp:DropDownList>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer col-md-12">
+                <asp:Button ID="btnGuardar" runat="server" class="btn btn-primary" Text="Guardar" OnClick="btnGuardar_Click" />
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
